@@ -50,7 +50,11 @@ function TextWithNumber({
   </div>
 }
 
+<<<<<<< HEAD
 // Generic List components with ts
+=======
+// List
+>>>>>>> 5eb4495a6f6faa51036963df9dcbfa276f67e0ab
 function List<ListItem>(
   {
     items, render,
