@@ -1,5 +1,6 @@
 import React, { ReactElement, ReactNode, useState } from 'react';
 import './App.css';
+import UseStateComponent from './features/UseStateComponent';
 
 // conventional props
 function Heading({ title }: { title?: string }) {
@@ -50,11 +51,7 @@ function TextWithNumber({
   </div>
 }
 
-<<<<<<< HEAD
-// Generic List components with ts
-=======
 // List
->>>>>>> 5eb4495a6f6faa51036963df9dcbfa276f67e0ab
 function List<ListItem>(
   {
     items, render,
@@ -87,8 +84,13 @@ function App() {
       </Container>
       <TextWithNumber >
         {(num: number) => <div>Today's number num {num}</div>}
-      </TextWithNumber> */}
-      <List items={["Jack", "Sadie", "Jerson", "oso"]} render={(item: string) => <div>{item.toLowerCase()}</div>}></List>
+      </TextWithNumber>
+      <List items={["Jack", "Sadie", "Jerson", "oso"]} render={(item: string) => <div>{item.toLowerCase()}</div>}></List> */}
+
+      <div>
+        <h1>UseState wit TS:</h1>
+        <UseStateComponent />
+      </div>
     </div>
   );
 }
