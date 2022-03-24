@@ -50,6 +50,25 @@ function TextWithNumber({
   </div>
 }
 
+// Generic List components with ts
+function List<ListItem>(
+  {
+    items, render,
+  }: {
+    items: ListItem[],
+    render: (item: ListItem) => ReactNode
+  }) {
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={index}>
+          {render(item)}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
 function App() {
   return (
     <div>
@@ -61,10 +80,11 @@ function App() {
       </HeadingWithContent>
       <Container>
         Foo
-      </Container> */}
+      </Container>
       <TextWithNumber >
         {(num: number) => <div>Today's number num {num}</div>}
-      </TextWithNumber>
+      </TextWithNumber> */}
+      <List items={["Jack", "Sadie", "Jerson", "oso"]} render={(item: string) => <div>{item.toLowerCase()}</div>}></List>
     </div>
   );
 }
