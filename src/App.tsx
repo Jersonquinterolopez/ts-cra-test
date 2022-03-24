@@ -1,5 +1,6 @@
 import React, { ReactElement, ReactNode, useState } from 'react';
 import './App.css';
+import UseEffectComponent from './features/UseEffectComponent';
 import UseStateComponent from './features/UseStateComponent';
 
 // conventional props
@@ -90,6 +91,10 @@ function App() {
       <div>
         <h1>UseState wit TS:</h1>
         <UseStateComponent />
+      </div>
+      <div>
+        <h1>UseEffect wit TS:</h1>
+        <UseEffectComponent />
       </div>
     </div>
   );
