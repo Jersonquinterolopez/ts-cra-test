@@ -1,5 +1,6 @@
 import React, { ReactElement, ReactNode, useState } from 'react';
 import './App.css';
+import UseContextComponent from './features/UseContextComponent';
 import UseEffectComponent from './features/UseEffectComponent';
 import UseStateComponent from './features/UseStateComponent';
 
@@ -95,6 +96,10 @@ function App() {
       <div>
         <h1>UseEffect wit TS:</h1>
         <UseEffectComponent />
+      </div>
+      <div>
+        <h1>UseContext wit TS:</h1>
+        <UseContextComponent />
       </div>
     </div>
   );
