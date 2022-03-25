@@ -1,5 +1,6 @@
 import React, { ReactElement, ReactNode, useState } from 'react';
 import './App.css';
+import CustomHookComponent from './features/CustomHookComponent';
 import UseContextComponent from './features/UseContextComponent';
 import UseEffectComponent from './features/UseEffectComponent';
 import UseReducerComponent from './features/UseReducerComponent';
@@ -110,9 +111,15 @@ function App() {
         <h1>UseReducer wit TS:</h1>
         <UseReducerComponent />
       </div>
+      <hr />
       <div>
         <h1>UseRef wit TS:</h1>
         <UseRefComponent />
+      </div>
+      <hr />
+      <div>
+        <h1>CustomHook wit TS:</h1>
+        <CustomHookComponent />
       </div>
     </div>
   );
