@@ -2,6 +2,7 @@ import React, { ReactElement, ReactNode, useState } from 'react';
 import './App.css';
 import UseContextComponent from './features/UseContextComponent';
 import UseEffectComponent from './features/UseEffectComponent';
+import UseReducerComponent from './features/UseReducerComponent';
 import UseStateComponent from './features/UseStateComponent';
 
 // conventional props
@@ -93,13 +94,20 @@ function App() {
         <h1>UseState wit TS:</h1>
         <UseStateComponent />
       </div>
+      <hr />
       <div>
         <h1>UseEffect wit TS:</h1>
         <UseEffectComponent />
       </div>
+      <hr />
       <div>
         <h1>UseContext wit TS:</h1>
         <UseContextComponent />
+      </div>
+      <hr />
+      <div>
+        <h1>UseReducer wit TS:</h1>
+        <UseReducerComponent />
       </div>
     </div>
   );
