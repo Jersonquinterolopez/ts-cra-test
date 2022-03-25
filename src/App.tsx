@@ -3,6 +3,7 @@ import './App.css';
 import UseContextComponent from './features/UseContextComponent';
 import UseEffectComponent from './features/UseEffectComponent';
 import UseReducerComponent from './features/UseReducerComponent';
+import UseRefComponent from './features/UseRefComponent';
 import UseStateComponent from './features/UseStateComponent';
 
 // conventional props
@@ -108,6 +109,10 @@ function App() {
       <div>
         <h1>UseReducer wit TS:</h1>
         <UseReducerComponent />
+      </div>
+      <div>
+        <h1>UseRef wit TS:</h1>
+        <UseRefComponent />
       </div>
     </div>
   );
