@@ -6,6 +6,7 @@ import UseEffectComponent from './features/UseEffectComponent';
 import UseReducerComponent from './features/UseReducerComponent';
 import UseRefComponent from './features/UseRefComponent';
 import UseStateComponent from './features/UseStateComponent';
+import EvenMoreReactComponent from './features/EvenMoreReactComponent'
 
 // conventional props
 function Heading({ title }: { title?: string }) {
@@ -120,6 +121,10 @@ function App() {
       <div>
         <h1>CustomHook wit TS:</h1>
         <CustomHookComponent />
+      </div>
+      <div>
+        <h1>Even more wit TS:</h1>
+        <EvenMoreReactComponent />
       </div>
     </div>
   );
